@@ -1,19 +1,16 @@
 # TIKFINDER
 
-Responsive front-end for a TikTok public-profile exploration website.
+Responsive static website for exploring publicly available TikTok profile information.
 
-## Deployment
-This repository is public and includes a GitHub Pages workflow at `.github/workflows/pages.yml`.
-In GitHub, open **Settings → Pages** and set **Build and deployment → Source: GitHub Actions** if it is not already selected. The workflow deploys the root static site when changes are pushed to `main`.
+## Hosting
+The project is connected to Cloudflare Pages as `tikfinder.pages.dev`. The production branch is `main`; pushes to `main` are intended to publish the static site automatically.
 
-## Current implementation status
+## Website features
 - Responsive dark interface for desktop and mobile.
-- Navigation sections: Home, Profile, Stories, Videos, Followers, Following, LIVE, Analytics and Saved.
-- Search form interaction and language selector (English, French, Arabic).
-- Clear disclosure that live data is not connected yet.
+- Home, Profile, Stories, Videos, Followers, Following, LIVE, Analytics and Saved sections.
+- Username or public profile URL search interface.
+- English, French and Arabic language selector.
+- Privacy-first messaging: public information only; no private account access or password collection.
 
-## Live TikTok data
-Real profile lookup, Story playback, followers/following and analytics require a permitted, reliable data provider or authorized API. The front-end does not fake results. Add any API credentials only to server-side secrets (never to `index.html`). Respect provider terms, platform rules and account privacy. Private or expired Stories cannot be guaranteed or accessed.
-
-## Publish
-After enabling GitHub Actions as the Pages source, push to `main`. The workflow deploys the root static site. Open the Pages URL shown in repository Settings → Pages.
+## Data status
+The current website is a front-end. Live TikTok profile lookup, active public Stories, followers/following and analytics are not connected yet. These require a reliable, permitted data provider or authorized API. The site does not invent results. Never put API credentials in `index.html`; use server-side secrets.
