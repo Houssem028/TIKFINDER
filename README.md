@@ -3,8 +3,8 @@
 Responsive front-end for a TikTok public-profile exploration website.
 
 ## Deployment
-This repository includes a GitHub Pages workflow at `.github/workflows/pages.yml`.
-In GitHub, open **Settings → Pages** and set **Build and deployment → Source: GitHub Actions** if it is not already selected. GitHub may require the repository to be public on plans that do not support Pages for private repositories.
+This repository is public and includes a GitHub Pages workflow at `.github/workflows/pages.yml`.
+In GitHub, open **Settings → Pages** and set **Build and deployment → Source: GitHub Actions** if it is not already selected. The workflow deploys the root static site when changes are pushed to `main`.
 
 ## Current implementation status
 - Responsive dark interface for desktop and mobile.
